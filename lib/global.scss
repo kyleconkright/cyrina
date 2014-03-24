@@ -1,0 +1,154 @@
+// VARIABLES
+$margin: 1%;
+$width: 80%;
+$galleryWidth: ($width/4) - ($margin * 2);
+
+$light: #ededed;
+$white:  #f6f6f6;
+$pink: #f1a1b3;
+$lightblue: lightblue;
+$dark: #26272b;
+
+
+
+* {
+	font-size: 103%;
+	color: inherit;
+	font-weight: 400;
+	font-family: Playfair Display, georgia;
+	line-height: 1.25em;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+*, *:before, *:after { 
+  box-sizing: border-box;
+}
+
+body, html {
+	height: 100%;
+}
+
+body {
+	color: $dark;
+}
+
+h1, h2 {
+	font-weight: 900;
+	font-style: italic;
+}
+
+h1 {
+	font-size: 3rem;
+	letter-spacing: .02em;
+}
+
+h2 {
+	font-size: 2.25rem;
+}
+
+h3 {
+	font-weight: 400;
+	font-size: 1.25rem;
+	text-transform: uppercase;
+	letter-spacing: .25em;
+}
+
+.btn {
+	border: 2px solid $white;
+	border-radius: 3px;
+	padding: .75% 1.25%;
+	font-family: roboto condensed;
+	font-size: .8em;
+	transform: background .2s;
+	&:hover {
+		background: $white;
+		color: $dark;
+	}
+}
+
+
+
+// LAYOUT **************************************************
+
+
+div#container {
+	max-width: 1800px;
+	margin: 0 auto;
+	display:flex;
+	flex-direction: column; 
+	div.section {
+		min-height: 500px;
+		div {
+			width: $width;
+			padding: $margin $margin $margin $margin/2;
+			margin: 0 auto;
+			display: flex;
+			align-items: center;
+			ul#menu {
+				flex: 1;
+				text-align: right;
+				font-style: italic;
+				li {
+					display: inline-block;
+					margin: 0 0 0 10px;
+				}
+			}
+		}
+		ul.gallery {
+			width: $width;
+			margin: 0 auto $margin*2;
+			h3 {
+				margin: 0 $margin;
+			}
+			li {
+				width: $galleryWidth;
+				height: 22vh;
+				display: inline-block;
+				margin: $margin;
+				span.thumb {
+					background-size: cover;
+					background-position: top;
+					display: block;
+					width: 100%;
+					height: 100%;
+					a {
+						display: block;
+						width: 100%;
+						height: 100%;
+					}
+				}
+				p.caption {
+					font-size: .8rem;
+					font-family: roboto condensed;
+					opacity: .5;
+				}
+			}
+		}
+	}
+	div#header {
+		min-height: 100vh;
+		max-height: 800px;
+		background: url('../../assets/img/headerbg.jpg') center no-repeat;
+		background-size: cover;
+	}
+	div#resume {
+		background: $dark;
+		color: $white;
+	}
+}
+
+
+
+
+
+@media only screen 
+and (max-width : 980px)
+and (orientation: portrait) {
+
+
+}
+
+
