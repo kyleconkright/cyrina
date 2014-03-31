@@ -14,75 +14,20 @@ $ ->
 			$.each results.response.videos, ->
 				$('<ul id="' + this.id + '" class="gallery"><h3>' + this.title + '</h3></ul>').appendTo('div#videos')
 				$.each this.video, ->
-					$('<li><span class="thumb" style="background-image: url(assets/img/' + this.type + '/' + this.url + ')"><a href="assets/' + this.type + '/' + this.url + '"></a></span><p class="caption">' + this.caption + '</p></li>')
+					$('<li><span class="thumb" style="background-image: url(assets/img/' + this.type + '/' + this.url + ')"><a data-lightbox-gallery="' + this.type + '" href="assets/vid/' + this.type + '/' + this.clip + '"></a></span><p class="caption">' + this.caption + '</p></li>')
 					.appendTo('div#videos ul#' + this.rel)
 
 			$.each results.response.photos, ->
 				$('<ul id="' + this.id + '" class="gallery"><h3>' + this.title + '</h3></ul>').appendTo('div#photos')
 				$.each this.photo, ->
-					$('<li><span class="thumb" style="background-image: url(assets/img/' + this.type + '/' + this.url + ')"><a href="assets/img/' + this.type + '/' + this.url + '"></a></span></li>')
+					$('<li><span class="thumb" style="background-image: url(assets/img/' + this.type + '/' + this.url + ')"><a data-lightbox-gallery="' + this.type + '" href="assets/img/' + this.type + '/' + this.url + '"></a></span></li>')
 					.appendTo('div#photos ul#' + this.rel + '.gallery')
 
+			$.each results.response.resume, ->
+				$('<ul id="' + this.id + '" class="resume"><h3>' + this.title + '</h3></ul>').appendTo('div#resume')
+				$.each this.entry, ->
+					$('<li><span class="title"><p>' + this.title + '</p></span><span class="role"><p>' + this.role + '</p></span><p><span class="item">' + this.item + '</p></span></li>')
+					.appendTo('div#resume ul#' + this.rel + '.resume')
 
-	# $.ajax
-	# 	url: 'data/data.json'
-	# 	type: 'GET'
-	# 	dataType: 'json'
-	# 	success: (results) ->
-	# 		$.each results.response.videos, ->
-	# 			$('<ul id="' + this.id + '" class="gallery"><h3>' + this.title + '</h3></ul>').appendTo('div#videos')
-	# 			$.each this.video, ->
-	# 				$('<li><span class="thumb" style="background-image: url(assets/img/' + this.type + '/' + this.url + ')"><a href="assets/' + this.type + '/' + this.url + '"></a></span><p class="caption">' + this.caption + '</p></li>')
-	# 				.appendTo('div#videos ul#' + this.rel)
-
-	# 		$.each results.response.photos, ->
-	# 			$('<ul id="' + this.id + '" class="gallery"><h3>' + this.title + '</h3></ul>').appendTo('div#photos')
-	# 			$.each this.photo, ->
-	# 				$('<li><span class="thumb" style="background-image: url(assets/img/' + this.type + '/' + this.url + ')"><a href="assets/img/' + this.type + '/' + this.url + '"></a></span></li>')
-	# 				.appendTo('div#photos ul#' + this.rel)
-
-
-	# $.ajax
-	# 	url: 'data/data.json'
-	# 	type: 'GET'
-	# 	dataType: 'json'
-	# 	success: (results) ->
-	# 		$.each results.response.photos, ->
-	# 			$('<ul id="' + this.id + '" class="gallery"><h3>' + this.title + '</h3></ul>').appendTo('div#photos')
-	# 			$.each this.photo, ->
-	# 				$('<li><span class="thumb" style="background-image: url(assets/img/' + this.type + '/' + this.url + ')"><a href="assets/img/' + this.type + '/' + this.url + '"></a></span></li>')
-	# 				.appendTo('div#photos ul#' + this.rel)
-
-
-
-	# $.ajax
-	# 	url: 'data/data.json'
-	# 	type: 'GET'
-	# 	dataType: 'json'
-	# 	success: (results) ->
-	# 		$.each results.response.videos, ->
-	# 			$('<ul id="' + this.id + '" class="gallery"><h3>' + this.title + '</h3></ul>').appendTo('#videos')
-	# 			$.each this.videoSet.video, ->
-	# 				$('<li><div class="thumb" style="background-image: url(assets/img/' + this.type + '/' + this.url + ')"><a href="#"><i class="fa fa-play-circle"></i></a></div><p class="caption">' + this.caption + '</p></li>').append('').appendTo('#videos ul#' + this.rel)
-
-
-	# $.ajax
-	# 	url: 'data/data.json'
-	# 	type: 'GET'
-	# 	dataType: 'json'
-	# 	success: (results) ->
-	# 		$.each results.response.photos, ->
-	# 			$('<ul id="' + this.id + '" class="gallery"><h3>' + this.title + '</h3></ul>').appendTo('#photos')
-	# 			$.each this.photoSet.photo, ->
-	# 				$('<li><div class="thumb" style="background-image: url(assets/img/' + this.type + '/' + this.url + ')"><a href="#"></a></div></li>').append('').appendTo('#photos ul#' + this.rel)
-
-
-	# $.ajax
-	# 	url: 'data/data.json'
-	# 	type: 'GET'
-	# 	dataType: 'json'
-	# 	success: (results) ->
-	# 		$.each results.response.resume, ->
-	# 			$('<ul id="' + this.id + '"><h3>' + this.title + '</h3></ul>').appendTo('#resume .holder')
-	# 			$.each this.entries.entry, ->
-	# 				$('<li><div>' + this.title + '</div><div>' + this.role + '</div><div>' + this.item + '</div></li>').appendTo('#resume .holder ul#' + this.rel)
+		complete: ->
+			$('ul.gallery a').nivoLightbox()

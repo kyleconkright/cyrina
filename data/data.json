@@ -6,6 +6,7 @@
 				{"title":"photos", "val":"photos","href":"#photos"},
 				{"title":"bio", "val":"bio","href":"#bio"},
 				{"title":"resume", "val":"resume","href":"#resume"},
+				{"title":"contact", "val":"contact","href":"#contact"},
 				{"title":"twitter", "val":"<i class=\"fa fa-twitter\">","href":"http://www.twitter.com/cyrinafiallo"},
 				{"title":"facebook", "val":"<i class=\"fa fa-facebook\">","href":"http://www.facebook.com/cyrinafiallo"},
 				{"title":"instagram", "val":"<i class=\"fa fa-instagram\">","href":"http://www.instagram.com/cyrinafiallo"}
@@ -16,18 +17,17 @@
 				"id":"01",
 				"title":"clips",
 				"video": [
-					{ "url": "community-01.jpg", "rel":"01", "type":"clip", "caption":"Community" },
-					{ "url": "supernatural.jpg", "rel":"01", "type":"clip", "caption":"Supernatural" },
-					{ "url": "gigantic.jpg", "rel":"01", "type":"clip", "caption":"Gigantic" },
-					{ "url": "friends-kill.jpg", "rel":"01", "type":"clip", "caption":"Friends 4 Ever" },
-					{ "url": "made-01.jpg", "rel":"01", "type":"clip", "caption":"Made: The Movie" },
-					{ "url": "made-02.jpg", "rel":"01", "type":"clip", "caption":"Made: The Movie" },
-					{ "url": "made-03.jpg", "rel":"01", "type":"clip", "caption":"Made: The Movie" },
-					{ "url": "made-04.jpg", "rel":"01", "type":"clip", "caption":"Made: The Movie" },
-					{ "url": "made-05.jpg", "rel":"01", "type":"clip", "caption":"Made: The Movie" },
-					{ "url": "made-06.jpg", "rel":"01", "type":"clip", "caption":"Made: The Movie" },
-					{ "url": "myalibi-01.jpg", "rel":"01", "type":"clip", "caption":"My Alibi" },
-					{ "url": "thesubpranos-turkey.jpg", "rel":"01", "type":"clip", "caption":"The Subpranos" }
+					{ "url": "community-01.jpg", "clip":"community.mov", "rel":"01", "type":"clip", "caption":"Community" },
+					{ "url": "supernatural.jpg", "clip":"supernatural.mov", "rel":"01", "type":"clip", "caption":"Supernatural" },
+					{ "url": "friends-kill.jpg", "clip":"friends-kill.mov", "rel":"01", "type":"clip", "caption":"Friends 4 Ever" },
+					{ "url": "made-01.jpg", "clip":"made-01.mov", "rel":"01", "type":"clip", "caption":"Made: The Movie" },
+					{ "url": "made-02.jpg", "clip":"made-02.mov", "rel":"01", "type":"clip", "caption":"Made: The Movie" },
+					{ "url": "made-03.jpg", "clip":"made-03.mov", "rel":"01", "type":"clip", "caption":"Made: The Movie" },
+					{ "url": "made-04.jpg", "clip":"made-04.mov", "rel":"01", "type":"clip", "caption":"Made: The Movie" },
+					{ "url": "made-05.jpg", "clip":"made-05.mov", "rel":"01", "type":"clip", "caption":"Made: The Movie" },
+					{ "url": "made-06.jpg", "clip":"made-06.mov", "rel":"01", "type":"clip", "caption":"Made: The Movie" },
+					{ "url": "myalibi-01.jpg", "clip":"myalibi.mov", "rel":"01", "type":"clip", "caption":"My Alibi" },
+					{ "url": "thesubpranos-turkey.jpg", "clip":"thesubpranos-turkey.mov", "rel":"01", "type":"clip", "caption":"The Subpranos" }
 				] 
 			},
 
@@ -35,21 +35,21 @@
 				"id":"02",
 				"title":"commercials",
 				"video": [
-					{ "url": "arbys.jpg", "rel":"02", "type":"commercial", "caption":"Arby's" },
-					{ "url": "army.jpg", "rel":"02", "type":"commercial", "caption":"Army" },
-					{ "url": "arrow.jpg", "rel":"02", "type":"commercial", "caption":"Arrow Electronics" },
-					{ "url": "capone.jpg", "rel":"02", "type":"commercial", "caption":"Capitol One" },
-					{ "url": "cvs.jpg", "rel":"02", "type":"commercial", "caption":"CVS" },
-					{ "url": "dole.jpg", "rel":"02", "type":"commercial", "caption":"Dole" },
-					{ "url": "hotpockets.jpg", "rel":"02", "type":"commercial", "caption":"Hot Pockets" },
-					{ "url": "mcdance.jpg", "rel":"02", "type":"commercial", "caption":"McDonalds" },
-					{ "url": "mcmom.jpg", "rel":"02", "type":"commercial", "caption":"McDonalds" },
-					{ "url": "mcspanish.jpg", "rel":"02", "type":"commercial", "caption":"McDonalds" },
-					{ "url": "microsoft.jpg", "rel":"02", "type":"commercial", "caption":"Microsoft" },
-					{ "url": "nokia.jpg", "rel":"02", "type":"commercial", "caption":"Nokia" },
-					{ "url": "target.jpg", "rel":"02", "type":"commercial", "caption":"Target" },
-					{ "url": "toyota.jpg", "rel":"02", "type":"commercial", "caption":"Toyota" },
-					{ "url": "zales.jpg", "rel":"02", "type":"commercial", "caption":"Zales" }
+					{ "url": "arbys.jpg", "clip":"arbys.mp4", "rel":"02", "type":"commercial", "caption":"Arby's" },
+					{ "url": "army.jpg", "clip":"army.mp4", "rel":"02", "type":"commercial", "caption":"Army" },
+					{ "url": "arrow.jpg", "clip":"arrow.mp4", "rel":"02", "type":"commercial", "caption":"Arrow Electronics" },
+					{ "url": "capone.jpg", "clip":"capone.mp4", "rel":"02", "type":"commercial", "caption":"Capitol One" },
+					{ "url": "cvs.jpg", "clip":"cvs.mp4", "rel":"02", "type":"commercial", "caption":"CVS" },
+					{ "url": "dole.jpg", "clip":"dole.mov", "rel":"02", "type":"commercial", "caption":"Dole" },
+					{ "url": "hotpockets.jpg", "clip":"hotpockets.mp4", "rel":"02", "type":"commercial", "caption":"Hot Pockets" },
+					{ "url": "mcdance.jpg", "clip":"mcdance.mp4", "rel":"02", "type":"commercial", "caption":"McDonalds" },
+					{ "url": "mcmom.jpg", "clip":"mcmom.mp4", "rel":"02", "type":"commercial", "caption":"McDonalds" },
+					{ "url": "mcspanish.jpg", "clip":"mcspanish.mp4", "rel":"02", "type":"commercial", "caption":"McDonalds" },
+					{ "url": "microsoft.jpg", "clip":"microsoft.mp4", "rel":"02", "type":"commercial", "caption":"Microsoft" },
+					{ "url": "nokia.jpg", "clip":"nokia.mp4", "rel":"02", "type":"commercial", "caption":"Nokia" },
+					{ "url": "target.jpg", "clip":"target.mp4", "rel":"02", "type":"commercial", "caption":"Target" },
+					{ "url": "toyota.jpg", "clip":"toyota.mp4", "rel":"02", "type":"commercial", "caption":"Toyota" },
+					{ "url": "zales.jpg", "clip":"zales.mp4", "rel":"02", "type":"commercial", "caption":"Zales" }
 				]
 			}
 		],
@@ -107,7 +107,7 @@
 					{ "title": "Made... The Movie", "role":"lead", "item":"MTV Films", "rel":"01" },
 					{ "title": "Delusions of Love", "role":"lead", "item":"Dir. Brandon Hall", "rel":"01" },
 					{ "title": "Freeport", "role":"lead", "item":"Dir. Chris Mollica", "rel":"01" },
-					{ "title": "Loved Ones", "role":"lead", "item":"Dir. Charity Babcock" },
+					{ "title": "Loved Ones", "role":"lead", "item":"Dir. Charity Babcock", "rel":"01"},
 					{ "title": "Edible Tees", "role":"lead", "item":"Dir. Eric Binns", "rel":"01" },
 					{ "title": "21 Tees", "role":"lead", "item":"Dir. Gary Cottie", "rel":"01" },
 					{ "title": "Winter and Spring", "role":"supporting", "item":"Dir. Kristian Gabriel", "rel":"01" }

@@ -127,6 +127,31 @@ div#container {
 				}
 			}
 		}
+		ul.resume {
+			width: $width;
+			margin: 0 auto $margin*5;
+			h3 {
+				margin: 0 $margin $margin*2;
+			}
+			li {
+				padding: 15px $margin;
+				overflow: hidden;
+				font-size: .85em;
+				border: solid #232121;
+				border-width: 1px 0 0;
+				span {
+					width: 33.3%;
+					float: left;
+				}
+				span.role {
+					text-align: center;
+					text-transform: capitalize;
+				}
+				span.item {
+					text-align: right;
+				}
+			}
+		}
 	}
 	div#header {
 		min-height: 100vh;
@@ -137,6 +162,12 @@ div#container {
 	div#resume {
 		background: $dark;
 		color: $white;
+	}
+
+	footer {
+		font-size: .7em;
+		padding: 20px;
+		text-align: right;
 	}
 }
 
