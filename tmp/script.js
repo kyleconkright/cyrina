@@ -12,14 +12,13 @@
         $.each(results.response.videos, function() {
           $('<ul id="' + this.id + '" class="gallery"><h3>' + this.title + '</h3></ul>').appendTo('div#videos');
           return $.each(this.video, function() {
-            console.log(this.type);
             return $('<li><span class="thumb" style="background-image: url(assets/img/' + this.type + '/' + this.url + ')"><a href="assets/' + this.type + '/' + this.url + '"></a></span><p class="caption">' + this.caption + '</p></li>').appendTo('div#videos ul#' + this.rel);
           });
         });
         return $.each(results.response.photos, function() {
           $('<ul id="' + this.id + '" class="gallery"><h3>' + this.title + '</h3></ul>').appendTo('div#photos');
           return $.each(this.photo, function() {
-            return $('<li>hi</li>').appendTo('div#photos ul#' + this.rel);
+            return $('<li><span class="thumb" style="background-image: url(assets/img/' + this.type + '/' + this.url + ')"><a href="assets/img/' + this.type + '/' + this.url + '"></a></span></li>').appendTo('div#photos ul#' + this.rel + '.gallery');
           });
         });
       }

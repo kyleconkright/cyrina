@@ -14,15 +14,14 @@ $ ->
 			$.each results.response.videos, ->
 				$('<ul id="' + this.id + '" class="gallery"><h3>' + this.title + '</h3></ul>').appendTo('div#videos')
 				$.each this.video, ->
-					console.log this.type
 					$('<li><span class="thumb" style="background-image: url(assets/img/' + this.type + '/' + this.url + ')"><a href="assets/' + this.type + '/' + this.url + '"></a></span><p class="caption">' + this.caption + '</p></li>')
 					.appendTo('div#videos ul#' + this.rel)
 
 			$.each results.response.photos, ->
 				$('<ul id="' + this.id + '" class="gallery"><h3>' + this.title + '</h3></ul>').appendTo('div#photos')
 				$.each this.photo, ->
-					$('<li>hi</li>')
-					.appendTo('div#photos ul#' + this.rel)
+					$('<li><span class="thumb" style="background-image: url(assets/img/' + this.type + '/' + this.url + ')"><a href="assets/img/' + this.type + '/' + this.url + '"></a></span></li>')
+					.appendTo('div#photos ul#' + this.rel + '.gallery')
 
 
 	# $.ajax
