@@ -81,7 +81,7 @@ div#container {
 	flex-direction: column; 
 	div.section {
 		min-height: 500px;
-		div {
+		div.holder {
 			width: $width;
 			padding: $margin $margin $margin $margin/2;
 			margin: 0 auto;
@@ -153,6 +153,19 @@ div#container {
 			}
 		}
 	}
+	div#bio {
+		padding: 0 0 15px;
+		div.biotext {
+			width: $width / 2;
+			margin: 30px auto;
+			p {
+				margin: 0 0 30px;
+				a {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
 	div#header {
 		min-height: 100vh;
 		max-height: 800px;
@@ -179,6 +192,27 @@ div#container {
 and (max-width : 980px)
 and (orientation: portrait) {
 
+	body {
+		font-size: 90%;
+	}
+	div#container {
+		div.section {
+			div.holder {
+				text-align: center;
+				display: block;
+				width: 95%;
+			}
+			ul.gallery li {
+				width: 48%;
+			}
+		}
+		div#bio {
+			div.biotext
+			{
+				width: $width;
+			}
+		}
+	}
 
 }
 

@@ -5,9 +5,9 @@
       type: 'GET',
       dataType: 'json',
       success: function(results) {
-        $('<ul id="menu"></ul>').appendTo('div.section div');
+        $('<ul id="menu"></ul>').appendTo('div.section div.holder');
         $.each(results.response.nav.links, function() {
-          return $('<li></li>').append('<a href="' + this.href + '">' + this.val + '</a>').appendTo('div.section div ul#menu');
+          return $('<li></li>').append('<a href="' + this.href + '">' + this.val + '</a>').appendTo('div.section div.holder ul#menu');
         });
         $.each(results.response.videos, function() {
           $('<ul id="' + this.id + '" class="gallery"><h3>' + this.title + '</h3></ul>').appendTo('div#videos');
@@ -29,7 +29,23 @@
         });
       },
       complete: function() {
-        return $('ul.gallery a').nivoLightbox();
+        var biotext;
+        $('#photos ul.gallery').magnificPopup({
+          delegate: 'a',
+          type: 'image',
+          gallery: {
+            enabled: true
+          }
+        });
+        $('#videos ul.gallery').magnificPopup({
+          delegate: 'a',
+          type: 'iframe',
+          gallery: {
+            enabled: true
+          }
+        });
+        biotext = $('.biotext');
+        return $('div#bio div.holder').after(biotext);
       }
     });
   });
