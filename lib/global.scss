@@ -80,7 +80,7 @@ div#container {
 	display:flex;
 	flex-direction: column; 
 	div.section {
-		min-height: 500px;
+		// min-height: 500px;
 		div.holder {
 			width: $width;
 			padding: $margin $margin $margin $margin/2;
@@ -156,8 +156,9 @@ div#container {
 	div#bio {
 		padding: 0 0 15px;
 		div.biotext {
-			width: $width / 2;
+			width: $width / 1.25;
 			margin: 30px auto;
+			font-size: 1.25em;
 			p {
 				margin: 0 0 30px;
 				a {
@@ -175,6 +176,29 @@ div#container {
 	div#resume {
 		background: $dark;
 		color: $white;
+	}
+	div#contact {
+		#listings {
+			width: $width;
+			margin: 0 auto;
+			ul {
+				float: left;
+				padding: $margin;
+				width: 25%;
+				font-size: .85em;
+				li {
+					line-height: 1.5em;
+				}
+				li:nth-of-type(2) {
+					font-weight: 700;
+					font-style: italic;
+					font-size: 1.15em;
+				}
+				h3 {
+					margin: 0 0 8px;
+				}
+			}
+		}
 	}
 
 	footer {
@@ -210,6 +234,14 @@ and (orientation: portrait) {
 			div.biotext
 			{
 				width: $width;
+			}
+		}
+		div#contact {
+			#listings {
+				ul {
+					width: 100%;
+					margin: 15px 0;
+				}
 			}
 		}
 	}

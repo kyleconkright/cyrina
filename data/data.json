@@ -149,8 +149,11 @@
 				"id":"04",
 				"title":"training",
 				"entry": [
-					{ "title": "Hollywood", "role":"lead", "item":"Dir. Davidson Cole", "rel":"04" },
-					{ "title": "Hollywood", "role":"lead", "item":"Dir. Davidson Cole", "rel":"04" }
+					{ "title": "Audition Technique", "inst":"Lesly Kahn", "rel":"04" },
+					{ "title": "Scene Study", "inst":"Warner Loughlin Studio", "rel":"04" },
+					{ "title": "On-Camera Audition", "inst":"Judy Kerr", "rel":"04" },
+					{ "title": "Improv for TV/Film Workshop", "inst":"Melora Hardin", "rel":"04" },
+					{ "title": "Improv Technique", "inst":"IO West (Alumni)", "rel":"04" }
 				]
 			},
 
@@ -158,9 +161,77 @@
 				"id":"05",
 				"title":"special skills",
 				"entry": [
-					{ "title": "Hollywood", "role":"lead", "item":"Dir. Davidson Cole", "rel":"05" },
-					{ "title": "Hollywood", "role":"lead", "item":"Dir. Davidson Cole", "rel":"05" }
+					{ 
+						"title": "Sports",
+						"rel":"05",
+						"items": [
+							"Aerobics", "Cycling", "Running", "Volleyball", "Boxing", "Yoga", "Tennis"
+						]
+					},
+					{ 
+						"title": "Music",
+						"rel":"05",
+						"items": [
+							"Singing (Mezzo-Soprano)", "Guitar"
+						]
+					},
+					{ 
+						"title": "Languages",
+						"rel":"05",
+						"items": [
+							"Spanish"
+						]
+					},
+					{ 
+						"title": "Accents",
+						"rel":"05",
+						"items": [
+							"Upper Class British", "Cockney", "New York", "Southern", "New York Italian"
+						]
+					}
 				]
+			}
+		],
+		"contact": [
+			{
+				"id":"01",
+				"title":"Management",
+				"company": "Redrock Entertainment",
+				"rep":"Jeffery Brooks",
+				"phone":"818 953 2225",
+				"fax":"818 953 2858",
+				"site":"redrockla.com",
+				"email":"red@redrockla.com"
+			},
+			{
+				"id":"02",
+				"title":"Theatrical",
+				"company": "Pantheon Talent",
+				"rep":"Cole Harris",
+				"phone":"310 201 0120",
+				"fax":"310 201 5958",
+				"site":"pantheontalent.com",
+				"email":"rice@pantheontalent.com"
+			},
+			{
+				"id":"03",
+				"title":"Commercial",
+				"company": "Aqua Talent",
+				"rep":"Lawrence Har",
+				"phone":"310 859 8889",
+				"fax":"310 859 8898",
+				"site":"aquatalent.com",
+				"email":"aqua@aquatalent.com"
+			},
+			{
+				"id":"04",
+				"title":"Voiceover",
+				"company": "Imperium 7",
+				"rep":"Marni Anhalt",
+				"phone":"323 931 9099",
+				"fax":"323 931 9084",
+				"site":"imperium-7.com",
+				"email":"marni@imperium-7.com"
 			}
 		]
 	}

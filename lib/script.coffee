@@ -25,9 +25,40 @@ $ ->
 
 			$.each results.response.resume, ->
 				$('<ul id="' + this.id + '" class="resume"><h3>' + this.title + '</h3></ul>').appendTo('div#resume')
-				$.each this.entry, ->
-					$('<li><span class="title"><p>' + this.title + '</p></span><span class="role"><p>' + this.role + '</p></span><p><span class="item">' + this.item + '</p></span></li>')
-					.appendTo('div#resume ul#' + this.rel + '.resume')
+
+			$.each results.response.resume[0].entry, ->
+				$('<li><span class="title"><p>' + this.title + '</p></span><span class="role"><p>' + this.role + '</p></span><p><span class="item">' + this.item + '</p></span></li>')
+				.appendTo('div#resume ul#' + this.rel + '.resume')
+
+			$.each results.response.resume[1].entry, ->
+				$('<li><span class="title"><p>' + this.title + '</p></span><span class="role"><p>' + this.role + '</p></span><p><span class="item">' + this.item + '</p></span></li>')
+				.appendTo('div#resume ul#' + this.rel + '.resume')
+
+			$.each results.response.resume[2].entry, ->
+				$('<li><span class="title"><p>' + this.title + '</p></span><span class="role"><p>' + this.role + '</p></span><p><span class="item">' + this.item + '</p></span></li>')
+				.appendTo('div#resume ul#' + this.rel + '.resume')
+
+			$.each results.response.resume[3].entry, ->
+				$('<li><span class="title"><p>' + this.title + '</p></span><p><span class="item">' + this.inst + '</p></span></li>')
+				.appendTo('div#resume ul#' + this.rel + '.resume')
+
+			$.each results.response.resume[4].entry, ->
+				item = (' ' + item for item in this.items)
+				$('<li><span class="title"><p>' + this.title + '</p>' + item + '</span>')
+				.appendTo('div#resume ul#' + this.rel + '.resume')
+
+			$.each results.response.contact, ->
+				$('<ul id="' + this.id + '">
+					<li><h3>' + this.title + '</h3></li>
+					<li>' + this.rep + '</li>
+					<li>' + this.company + '</li>
+					<li>' + this.phone + '</li>
+					<li>' + this.fax + '</li>
+					<li>' + this.email + '</li>
+					<li>' + this.site + '</li>
+					</ul>')
+				.appendTo('div#contact #listings')
+
 
 		complete: ->
 			$('#photos ul.gallery').magnificPopup({

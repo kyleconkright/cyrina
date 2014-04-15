@@ -21,11 +21,37 @@
             return $('<li><span class="thumb" style="background-image: url(assets/img/' + this.type + '/' + this.url + ')"><a data-lightbox-gallery="' + this.type + '" href="assets/img/' + this.type + '/' + this.url + '"></a></span></li>').appendTo('div#photos ul#' + this.rel + '.gallery');
           });
         });
-        return $.each(results.response.resume, function() {
-          $('<ul id="' + this.id + '" class="resume"><h3>' + this.title + '</h3></ul>').appendTo('div#resume');
-          return $.each(this.entry, function() {
-            return $('<li><span class="title"><p>' + this.title + '</p></span><span class="role"><p>' + this.role + '</p></span><p><span class="item">' + this.item + '</p></span></li>').appendTo('div#resume ul#' + this.rel + '.resume');
-          });
+        $.each(results.response.resume, function() {
+          return $('<ul id="' + this.id + '" class="resume"><h3>' + this.title + '</h3></ul>').appendTo('div#resume');
+        });
+        $.each(results.response.resume[0].entry, function() {
+          return $('<li><span class="title"><p>' + this.title + '</p></span><span class="role"><p>' + this.role + '</p></span><p><span class="item">' + this.item + '</p></span></li>').appendTo('div#resume ul#' + this.rel + '.resume');
+        });
+        $.each(results.response.resume[1].entry, function() {
+          return $('<li><span class="title"><p>' + this.title + '</p></span><span class="role"><p>' + this.role + '</p></span><p><span class="item">' + this.item + '</p></span></li>').appendTo('div#resume ul#' + this.rel + '.resume');
+        });
+        $.each(results.response.resume[2].entry, function() {
+          return $('<li><span class="title"><p>' + this.title + '</p></span><span class="role"><p>' + this.role + '</p></span><p><span class="item">' + this.item + '</p></span></li>').appendTo('div#resume ul#' + this.rel + '.resume');
+        });
+        $.each(results.response.resume[3].entry, function() {
+          return $('<li><span class="title"><p>' + this.title + '</p></span><p><span class="item">' + this.inst + '</p></span></li>').appendTo('div#resume ul#' + this.rel + '.resume');
+        });
+        $.each(results.response.resume[4].entry, function() {
+          var item;
+          item = (function() {
+            var _i, _len, _ref, _results;
+            _ref = this.items;
+            _results = [];
+            for (_i = 0, _len = _ref.length; _i < _len; _i++) {
+              item = _ref[_i];
+              _results.push(' ' + item);
+            }
+            return _results;
+          }).call(this);
+          return $('<li><span class="title"><p>' + this.title + '</p>' + item + '</span>').appendTo('div#resume ul#' + this.rel + '.resume');
+        });
+        return $.each(results.response.contact, function() {
+          return $('<ul id="' + this.id + '"> <li><h3>' + this.title + '</h3></li> <li>' + this.rep + '</li> <li>' + this.company + '</li> <li>' + this.phone + '</li> <li>' + this.fax + '</li> <li>' + this.email + '</li> <li>' + this.site + '</li> </ul>').appendTo('div#contact #listings');
         });
       },
       complete: function() {
