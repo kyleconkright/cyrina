@@ -32,13 +32,13 @@ $ ->
 
 			$.each results.response.photos, ->
 				$('<div id="' + this.id + '" class="bit-1 gallery"><h3>' + this.title + '</h3></div>').appendTo('div#photos div#content')
-				$.each this.photo, ->	
+				$.each this.photo, ->
 					$('<div class="bit-5 item">
 						<a href="assets/img/'+this.type+'/'+this.img+'" data-lightbox-gallery="' + this.type + '" style="background-image: url(assets/img/'+this.type+'/'+this.img+')"></a>
 						</div>')
 					.appendTo('div#photos #content')
 
-			$('<p>' + results.response.bio + '</p>').appendTo('div#bio #content')		
+			$('<p>' + results.response.bio + '</p>').appendTo('div#bio #content')
 
 			$.each results.response.resume, ->
 				$('<div id="' + this.id + '" class="bit-1 resume"><h3>' + this.title + '</h3></div>').appendTo('div#resume #content')
@@ -56,8 +56,8 @@ $ ->
 			$.each results.response.resume[2].entry, ->
 					console.log this.title
 					$('<div class="title bit-3"><p>' + this.title + '</p></div><div class="role bit-3"><p>' + this.role + '</p></div><div class="item bit-3"><p>' + this.item + '</p></div>')
-					.appendTo('div#resume div#' + this.rel + '.resume')	
-					
+					.appendTo('div#resume div#' + this.rel + '.resume')
+
 			$.each results.response.resume[3].entry, ->
 					console.log this.title
 					$('<div class="title bit-3"><p>' + this.title + '</p></div><div class="role bit-3"><p></p></div><div class="item bit-3"><p>' + this.inst + '</p></div>')
@@ -68,11 +68,11 @@ $ ->
 				$('<div class="frame"><div class="title bit-3"><p>' + this.title + '</p></div><div class="item bit-66"><p>' + item + '</p></div></div>')
 				.appendTo('div#resume div#' + this.rel + '.resume')
 
-				
+
 
 			$.each results.response.contact, ->
 				console.log this.title
-				$('<div class="bit-4">
+				$('<div class="bit-3">
 					<h3>' + this.title + '</h3>
 					<p>' + this.company + '</p>
 					<p>' + this.rep + '</p>

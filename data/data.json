@@ -36,22 +36,23 @@
 				"id":"02",
 				"title":"commercials",
 				"video": [
+					{ "img": "allstate.png", "clip":"allstate.mov", "rel":"02", "type":"commercial", "caption":"Allstate" },
 					{ "img": "toyota2.png", "clip":"toyota2.mp4", "rel":"02", "type":"commercial", "caption":"Toyota" },
-					{ "img": "arbys.jpg", "clip":"arbys.mp4", "rel":"02", "type":"commercial", "caption":"Arby's" },
-					{ "img": "army.jpg", "clip":"army.mp4", "rel":"02", "type":"commercial", "caption":"Army" },
-					{ "img": "arrow.jpg", "clip":"arrow.mp4", "rel":"02", "type":"commercial", "caption":"Arrow Electronics" },
-					{ "img": "capone.jpg", "clip":"capone.mp4", "rel":"02", "type":"commercial", "caption":"Capitol One" },
 					{ "img": "cvs.jpg", "clip":"cvs.mp4", "rel":"02", "type":"commercial", "caption":"CVS" },
 					{ "img": "dole.jpg", "clip":"dole.mov", "rel":"02", "type":"commercial", "caption":"Dole" },
+					{ "img": "army.jpg", "clip":"army.mp4", "rel":"02", "type":"commercial", "caption":"Army" },
+					{ "img": "microsoft.jpg", "clip":"microsoft.mp4", "rel":"02", "type":"commercial", "caption":"Microsoft" },
+					{ "img": "mcmom.jpg", "clip":"mcmom.mp4", "rel":"02", "type":"commercial", "caption":"McDonalds" },
+					{ "img": "arrow.jpg", "clip":"arrow.mp4", "rel":"02", "type":"commercial", "caption":"Arrow Electronics" },
+					{ "img": "capone.jpg", "clip":"capone.mp4", "rel":"02", "type":"commercial", "caption":"Capitol One" },
 					{ "img": "hotpockets.jpg", "clip":"hotpockets.mp4", "rel":"02", "type":"commercial", "caption":"Hot Pockets" },
 					{ "img": "mcdance.jpg", "clip":"mcdance.mp4", "rel":"02", "type":"commercial", "caption":"McDonalds" },
-					{ "img": "mcmom.jpg", "clip":"mcmom.mp4", "rel":"02", "type":"commercial", "caption":"McDonalds" },
 					{ "img": "mcspanish.jpg", "clip":"mcspanish.mp4", "rel":"02", "type":"commercial", "caption":"McDonalds" },
-					{ "img": "microsoft.jpg", "clip":"microsoft.mp4", "rel":"02", "type":"commercial", "caption":"Microsoft" },
 					{ "img": "nokia.jpg", "clip":"nokia.mp4", "rel":"02", "type":"commercial", "caption":"Nokia" },
 					{ "img": "target.jpg", "clip":"target.mp4", "rel":"02", "type":"commercial", "caption":"Target" },
 					{ "img": "toyota.jpg", "clip":"toyota.mp4", "rel":"02", "type":"commercial", "caption":"Toyota" },
-					{ "img": "zales.jpg", "clip":"zales.mp4", "rel":"02", "type":"commercial", "caption":"Zales" }
+					{ "img": "zales.jpg", "clip":"zales.mp4", "rel":"02", "type":"commercial", "caption":"Zales" },
+					{ "img": "arbys.jpg", "clip":"arbys.mp4", "rel":"02", "type":"commercial", "caption":"Arby's" }
 				]
 			}
 		],
@@ -119,18 +120,18 @@
 				"id":"02",
 				"title":"television/internet",
 				"entry": [
-					{ "title": "Glee", "role":"guest star", "item":"FOX", "rel":"02" },
-					{ "title": "Criminal Minds", "role":"co-star", "item":"CBS", "rel":"02" },
-					{ "title": "Good Luck Charlie", "role":"recurring guest star", "item":"Disney", "rel":"02" },
-					{ "title": "Supernatural", "role":"guest star", "item":"CW", "rel":"02" },
-					{ "title": "Community", "role":"guest-star", "item":"NBC", "rel":"02" },
-					{ "title": "Switched at Birth", "role":"co-star", "item":"ABC Family", "rel":"02" },
-					{ "title": "Gigantic", "role":"guest star", "item":"Nickelodeon", "rel":"02" },
+					{ "title": "Glee", "role":"guest star", "item":"Dir. Eric Stoltz/FOX", "rel":"02" },
+					{ "title": "Criminal Minds", "role":"guest star", "item":"Dir. Rob Bailey/CBS", "rel":"02" },
+					{ "title": "Good Luck Charlie", "role":"recurring guest star", "item":"Dir. Bob Koherr/Disney", "rel":"02" },
+					{ "title": "Supernatural", "role":"guest star", "item":"Dir. Charles Carner/CW", "rel":"02" },
+					{ "title": "Community", "role":"guest-star", "item":"Dir. Steven Sprung/NBC", "rel":"02" },
+					{ "title": "Switched at Birth", "role":"co-star", "item":"Dir. Norman Buckley/ABC Family", "rel":"02" },
+					{ "title": "Gigantic", "role":"guest star", "item":"Dir. Fred Savage/Nickelodeon", "rel":"02" },
 					{ "title": "A Marriage (pilot)", "role":"co-star", "item":"Dir. Marshall Herskovitz", "rel":"02" },
 					{ "title": "The Subpranos", "role":"lead / co-creator", "item":"thesubpranos.com", "rel":"02" },
-					{ "title": "My Date (web series)", "role":"guest star", "item":"Disney", "rel":"02" },
+					{ "title": "My Date (web series)", "role":"guest star", "item":"Dir. Oren Kaplan/Disney", "rel":"02" },
 					{ "title": "Little Miss CEO", "role":"series regular", "item":"Dir. John Bowab", "rel":"02" },
-					{ "title": "Everybody Hates Chris", "role":"co-star", "item":"CW", "rel":"02" },
+					{ "title": "Everybody Hates Chris", "role":"co-star", "item":"Dir. Keith Truesdell/CW", "rel":"02" },
 					{ "title": "My Alibi (Web Series)", "role":"series regular", "item":"Disney (ABCfamily.com)", "rel":"02" }
 				]
 			},
@@ -200,16 +201,6 @@
 		,
 
 		"contact": [
-			{
-				"id":"01",
-				"title":"Management",
-				"company": "Redrock Entertainment",
-				"rep":"Jeffery Brooks",
-				"phone":"818 953 2225",
-				"fax":"818 953 2858",
-				"site":"redrockla.com",
-				"email":"red@redrockla.com"
-			},
 			{
 				"id":"02",
 				"title":"Theatrical",
