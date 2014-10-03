@@ -202,16 +202,6 @@
 
 		"contact": [
 			{
-				"id":"02",
-				"title":"Theatrical",
-				"company": "KMR",
-				"rep":"Harold Augenstein",
-				"phone":"818 769 9111",
-				"fax":"818 769 9840",
-				"site":"www.kmrtalent.com",
-				"email":"HAugenstein@KMRTalent.com"
-			},
-			{
 				"id":"03",
 				"title":"Commercial",
 				"company": "Aqua Talent",
