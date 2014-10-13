@@ -57,7 +57,7 @@
         });
         $.each(results.response.contact, function() {
           console.log(this.title);
-          return $('<div class="bit-3"> <h3>' + this.title + '</h3> <p>' + this.company + '</p> <p>' + this.rep + '</p> <p>' + this.phone + '</p> <p>' + this.fax + '</p> <p>' + this.site + '</p> <p>' + this.email + '</p> </div>').appendTo('div#contact #content');
+          return $('<div class="bit-3"> <h3>' + this.title + '</h3> <p>' + this.company + '</p> <p>' + this.rep + '</p> <p>' + this.phone + '</p> <p>' + this.fax + '</p> <p>' + this.email + '</p> </div>').appendTo('div#contact #content');
         });
         ({
           complete: function() {}

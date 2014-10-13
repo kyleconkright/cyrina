@@ -78,7 +78,6 @@ $ ->
 					<p>' + this.rep + '</p>
 					<p>' + this.phone + '</p>
 					<p>' + this.fax + '</p>
-					<p>' + this.site + '</p>
 					<p>' + this.email + '</p>
 				</div>').appendTo('div#contact #content')
 
